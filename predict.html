@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Predict Stock Price</title>
+</head>
+<body>
+	<h1>Predict Stock Price</h1>
+	<form action="/predict" method="POST">
+		<label for="stock_symbol">Stock Symbol:</label>
+		<input type="text" id="stock_symbol" name="stock_symbol"><br><br>
+		<label for="start_date">Start Date:</label>
+		<input type="date" id="start_date" name="start_date"><br><br>
+		<label for="end_date">End Date:</label>
+		<input type="date" id="end_date" name="end_date"><br><br>
+		<input type="submit" value="Predict">
+	</form>
+</body>
+</html>

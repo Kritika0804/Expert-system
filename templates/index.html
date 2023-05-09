@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+<head>
+    <title>Stock Predictor</title>
+</head>
+<body>
+    <h1>Stock Predictor</h1>
+    <p>Welcome to our stock prediction tool. Enter a stock symbol and a date range to get a prediction.</p>
+    <form method="post" action="{{ url_for('predict') }}">
+        <label for="stock_symbol">Stock symbol:</label>
+        <input type="text" id="stock_symbol" name="stock_symbol" required>
+        <br>
+        <label for="start_date">Start date:</label>
+        <input type="date" id="start_date" name="start_date" required>
+        <br>
+        <label for="end_date">End date:</label>
+        <input type="date" id="end_date" name="end_date" required>
+        <br>
+        <button type="submit">Predict</button>
+    </form>
+    <p><a href="{{ url_for('about') }}">About this project</a></p>
+</body>
+</html>
